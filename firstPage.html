@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Anjani Lal Mandir Trust</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="plugin/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="plugin/jquery.cycle2.min.js"></script>
+<!--<script type="text/javascript" src="plugin/jquery.cycle.all.js"></script>	-->
+<!--<script type="text/javascript" src="plugin/jquery.cycle2.caption2.min.js"></script>-->
+</head>
+<!--<script type="text/javascript">
+$('#slider').cycle({ 
+    fx:     'scrollHorz', 
+    speed:  'slow', 
+    <!--timeout: 0, -->
+<!--    next:   '#next', 
+    prev:   '#previous' 
+});
+</script>-->
+  <!-- start of fixed navigation bar script -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 800;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+</script>
+<!-- End of fixed navigation bar script -->
+<body>
+<div id="wapper">
+  <div id="topwapper">
+    <header id="mainheader">
+	<!--
+      <header id="subheader1"><h6><b>AA जय श्री राम AA जय श्री अंजनीलाल AA ॐ नमो शिवाय AA</b></h6></header>
+      <header id="subheader2">
+        <h1>श्री अंजनीलाल मंदिर ट्रस्ट ब्यावरा राजगढ ¼मÛप्रÛ½</h1>
+        <h5>मÛप्रÛ शासन द्वारा पंजीकृत ट्रस्ट</h5>
+        <h5>¼धर्मिक, सामाजिक, राष्ट्रीय एवं मानव हितार्थ कार्यो में अग्रणी संस्था½</h5>
+      </header>
+    </header>
+    <figure>logo<figcaption></figcaption></figure>
+    <!--  Start of Navigation-->
+    <nav id="mainnavigation">
+    <ul>
+    <li><a id="home" href="index.html" class="thispage">आगमन</a></li>
+    <li><a id="mandir" href="#">मंदिर</a>
+    	<ul>
+            <li><a id="anjanimandir" href="#">श्री अंजनीलाल मंदिर</a></li>
+            <li><a id="rammandir" href="#">श्री राम मंदिर</a></li>
+            <li><a id="shivmandir" href="#">श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर</a></li>
+        </ul>
+    </li>
+    <li><a id="buildings" href="#">अन्य भवन</a>
+    	<ul>
+        	<li><a id="office" href="#">कार्यालय</a></li>
+            <li><a id="santniwas" href="#">संत निवास</a></li>
+            <li><a id="vishram" href="#">विश्राम गृह</a></li>
+            <li><a id="satsang" href="#">सत्संग भवन</a></li>
+            <li><a id="samudayik" href="#">सामुदायिक भवन</a></li>
+            <li><a id="arogy" href="#">आरोग्य भवन</a></li>
+            <li><a id="sitarasoi" href="#">सीता रसोई</a></li>
+            <li><a id="goshala" href="#">गौ शाला</a></li>
+            <li><a id="balkida" href="#">बाल क्रीडागन</a></li>
+            <li><a id="ashokvadika" href="#">अशोक वाटिका</a></li>
+            <li><a id="ramdhat" href="#">राम धाट</a></li>
+            <li><a id="otherbhawn" href="#">अन्य</a></li>
+        </ul>
+     </li>
+     <li><a id="gatividhi" href="#">गतिविधियाँ</a>
+    	<ul>
+            <li><a id="dharmik" href="#">धार्मिक</a>
+            	<ul>
+                	<li><a id="avishek" herf="#">अभिषेक</a></li>
+                    <li><a id="ramjanam" herf="#">श्री राम जन्मोत्सव</a></li>
+                    <li><a id="hanumanjenti" herf="#">हनुमान जयंती</a></li>
+                    <li><a id="shivratri" herf="#">महा शिवरात्रि</a></li>
+                    <li><a id="navratri" herf="#">नवरात्रि महोत्सव</a></li>
+                    <li><a id="kavaryatra" herf="#">कवाड यात्रा</a></li>
+                    <li><a id="shavnsom" herf="#">श्रावण सोमवार</a></li>
+                    <li><a id="shardpurnima" herf="#">शरद पूर्णिमा</a></li>
+                    <li><a id="vmala" herf="#">व्याख्यान माला</a></li>
+            	</ul>
+            </li>
+            <li><a id="samajik" href="#">सामजिक</a>
+            	<ul>
+                	<li><a id="samuhikvi" herf="#">सामुहिक विवाह</a></li>
+                    <li><a id="netrshivir" herf="#">नेत्र शिविर</a></li>
+                    <li><a id="rogshivir" herf="#">रोग निदान शिविर</a></li>
+                </ul>
+            </li>
+            <li><a id="rastriy" href="#">राष्ट्रीय</a>
+            	<ul>
+             		<li><a id="sevadal" herf="#">सेवा दल</a></li>
+                    <li><a id="rastriyvip" herf="#">राष्ट्रीय विपदा में सहायता</a></li>
+                </ul>
+            </li>
+            <li><a id="sheksnik" href="#">शेक्षणिक</a>
+            	<ul>
+            		<li><a id="chatrsam" herf="#">छात्र सम्मान</a></li>
+                    <li><a id="ramyangyan" herf="#">रामायण ज्ञान परीक्षा</a></li>
+                    <li><a id="tivrbhasn" herf="#">त्वरित भाषण प्रतियोगिता</a></li>
+                    <li><a id="vadvivad" herf="#">वाद विवाद प्रतियोगिता</a></li>
+                    <li><a id="antaksari" herf="#">अन्ताक्षरी</a></li>
+                    <li><a id="chitrkala" herf="#">चित्रकला प्रतियोगिता</a></li>
+                    <li><a id="bhajangayan" herf="#">भजन गायन प्रतियोगिता</a></li>
+                </ul>
+            </li>
+        </ul>
+    	</li>
+        </ul>
+    </li>
+    </ul>
+    </nav>
+    <!--  End of Navigation-->
+  </div>
+  <br>
+  <!-- <div id="bottomwapper" class="bottomwapper">"bottomwapper" -->
+  <div id="bottomwapper">
+<!--  start of slideshow-->
+<!--  <div id="slideshow">
+  	<div id="previous" class="controller"><p><</p></div>
+    <div id="slider">
+    <img src="images/Ram_Mandir_HDR1.jpg" alt="test"/>
+    <img src="images/Shiv_Mandir_HDR1.jpg" alt=""/>
+    </div>
+    <div id="next" class="controller"><p>></p></div>
+  </div>-->
+ <br>
+ <!--
+<div id = "slideshow" class="cycle-slideshow" 
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=5000
+    data-cycle-caption-plugin=caption2
+    data-cycle-easing="linear"
+    data-cycle-overlay-fx-out="slideUp"
+    data-cycle-overlay-fx-in="slideDown"
+    >
+    <div class="cycle-overlay"></div>
+
+    <img src="images/Ram_Mandir_HDR1.jpg" data-cycle-title="श्री राम मंदिर" data-cycle-desc="प्राणप्रतिष्ठा : सन २०१२">
+    <img src="images/Shiv_Mandir_HDR1.jpg" data-cycle-title="श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर" data-cycle-desc="प्राणप्रतिष्ठा : सन २००३">
+    <img src="images/Ram_Mandir_HDR2.jpg" data-cycle-title="श्री राम मंदिर" data-cycle-desc="भगवान श्री राम दरबा">    <!--    <img src="<?= $imagePath ?>/images/p3.jpg" data-cycle-title="Angel Island" data-cycle-desc="San Franscisco Bay">
+    <img src="<?= $imagePath ?>/images/p4.jpg" data-cycle-title="Raquette Lake" data-cycle-desc="Adirondack State Park">-->
+</div>
+<!--  End of Slideshow-->
+    <section id="dynamicSection">
+      <aside id="leftSidebar">
+		<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=2&amp;hl=hi&amp;bgcolor=%23FFFFFF&amp;src=en.indian%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FCalcutta" style=" border-width:0 " width="400" height="400" frameborder="0" scrolling="no"></iframe>
+  </aside>
+      <main id="main">News and Events</main>
+      <aside id="rightSidebar">Content for  id "rightSidebar" Goes Here</aside>
+      <footer id="mainFooter">
+ 		 <footer id="subFooter1">Content for  id "subFooter1" Goes Here</footer>
+         <footer id="subFooter2">Content for  id "subFooter2" Goes Here</footer>
+      </footer>
+    </section>
+  </div>
+</div>
+</body>
+</html>
