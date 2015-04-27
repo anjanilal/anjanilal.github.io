@@ -13,10 +13,15 @@ html>body {
   padding: 0;
   height: 100%;}
   */
-#wapper {
+# wapper #topwapper {
 	list-style-type: none;
 	padding-top: 0px;
 	margin-top: 0px;
+	width:100%;
+	height:100%;
+	display: block;
+	position: relative;
+	float:left;
 }
 /* Start of fixed menu */
 /*
@@ -82,10 +87,12 @@ a:hover, a:active , a:focus{
 	text-decoration: none;
 	background-color: #43A6CB;
 }
-#topwapper #staticSection #mainnavigation {
+/*#topwapper #staticSection #mainnavigation {
 	padding-top: 6px;
 	padding-bottom: 6px;
-}
+	width: 100%;
+	height: 100%;
+}*/
 #mainnavigation li {
 	border: 5px solid;
 	/*border-color: #4B46C8;*/
@@ -120,11 +127,16 @@ a:hover, a:active , a:focus{
 	background-color: #43A6CB;
 }
 #slideshow   {
+	width:auto;
+	height:auto;
 	float: left;
 	overflow: auto;
 	margin-left: 40px;
 	margin-right: 5px;
 	display: block;
+	position: relative;
+	max-width: 900px;
+	max-height: 650px;
 }
 #previous   {
 	display: block;
@@ -145,7 +157,7 @@ a:hover, a:active , a:focus{
 	position: relative;
 	margin-top: 10px;
 }
-#slider img {
+/*#slider img {
 	min-width: 700px;
 	min-height: 500px;
 	width: 700px;
@@ -155,7 +167,7 @@ a:hover, a:active , a:focus{
 	position: relative;
 	max-width: 700px;
 	max-height: 500px;
-}
+}*/
 #mainnavigation  {
 	/*margin-left: 45px;*/
 	/*margin:0 auto;*/
@@ -170,18 +182,20 @@ a:hover, a:active , a:focus{
 	background-color: #4D4D4D;*/
 }
 
-#mainheader {
+#wapper #topwapper #mainheader {
 	text-align: center;
 	font-family: "Devlys 010";
 	line-height: 40%;
 	background-color: #86123E;
-	margin-top: -25px;
 	padding-top: 1px;
 	padding-bottom: 39px;
-	padding-left: 0px;
-	margin-left: -10px;
-	margin-right: -10px;
-	margin-bottom: -53px;
+	margin-right: -5px;
+	margin-bottom: 0px;
+	width: 100%;
+	position: relative;
+	float: left;
+	margin-left: -5px;
+	padding-left: 5px;
 }
 .fixed {
 	position: fixed; 
@@ -189,8 +203,8 @@ a:hover, a:active , a:focus{
 	height: 0px; 
 	z-index: 9999;
 }#bottomwapper #slideshow .cycle-overlay {
-	position: static;
-	bottom: -20px;
+	position: relative;
+	bottom: 0px;
 	width: 100%;
 	z-index: 600;
 	background: none repeat scroll 0% 0% #000000;
@@ -201,14 +215,14 @@ a:hover, a:active , a:focus{
 #slideshow > img {
 	/*min-width: 700px;*/
 	/*min-height: 500px;*/
-	width: 1000px;
-	height: 650px;
+	width: auto;
+	height: auto;
 	display: inline;
 	overflow: hidden;
 	position: relative;
 	padding-top: 2px;
-	/*max-width: 1000px;*/
-	/*max-height: 693px;*/
+	max-width: 900px;
+	max-height: 550px;
 }
 #bottomwapper #dynamicSection #leftSidebar {
 	float: left;
@@ -230,7 +244,7 @@ a:hover, a:active , a:focus{
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 800;
-	font-size: 2vw;
+	font-size: 1vw;
 	text-align: center;
 	display: block;
 	margin-bottom: 22px;
@@ -262,16 +276,14 @@ a:hover, a:active , a:focus{
 	height: 768px;
 	display: block;
 }
-#gcalender {
-	background-color: none;
-	/*border-style: solid;*/
+#wapper #bottomwapper #gcalender {
 	float: left;
-	width: 830px;
-	height: 700px;
-	position: absolute;
+	width: auto;
+	height: auto;
+	position: relative;
 	display: block;
-	margin-left:1040px;
-	margin-top:20px;
+	max-width: 900px;
+	max-height: 650px;
 }
 #bottomwapper {
 
@@ -288,4 +300,15 @@ h3 {
 	text-decoration: underline;
 	text-indent: 0px;
 	display:block;
+}
+
+.winWidth {
+	border: solid 5px red;
+}
+#wapper #bottomwapper #gcal {
+	position: relative;
+}
+#wapper {
+	width: 100%;
+	height: 100%;
 }

@@ -9,6 +9,14 @@
 <script src="plugin/anjaniCal.js"></script>
 <!--<script type="text/javascript" src="plugin/jquery.cycle.all.js"></script>	-->
 <!--<script type="text/javascript" src="plugin/jquery.cycle2.caption2.min.js"></script>-->
+<script>
+$(document).ready(function(){
+var innerw = $(window).innerWidth();
+var innerh = $(window).innerHeight();
+$(".winWidth").css("width", iw - 15);
+//$(".winWidth").css("height", ih - 50);
+});
+</script>
 </head>
 <!--<script type="text/javascript">
 $('#slider').cycle({ 
@@ -102,7 +110,6 @@ $('#slider').cycle({
         <h5>मÛप्रÛ शासन द्वारा पंजीकृत ट्रस्ट ¼धर्मिक, सामाजिक, राष्ट्रीय एवं मानव हितार्थ कार्यो में अग्रणी संस्था½</h5>
       </header>
     </header>
-    <figure>logo<figcaption></figcaption></figure>
     <!--  Start of Navigation-->
     <nav id="mainnavigation">
     <ul>
@@ -198,7 +205,6 @@ $('#slider').cycle({
     </div>
     <div id="next" class="controller"><p>></p></div>
   </div> -->
- <br>
 <div id = "slideshow" class="cycle-slideshow" 
     data-cycle-fx=scrollHorz
     data-cycle-timeout=5000
@@ -221,7 +227,7 @@ $('#slider').cycle({
 	var googleCalendarId="anjanilalbiaora@gmail.com";
 	var googleCalendarApiKey="AIzaSyDXu-zhIGHYpPAqo6D8TB7vXKEMOFGIEUo";
 	//optional--------------------------
-	var eventWidgetWidth = 830; 
+	//var eventWidgetWidth = 830; 
 	var pathToLoadingImage = "./loader.gif";
 </script>
 <div id="gcalender">
@@ -230,21 +236,8 @@ $('#slider').cycle({
 </div>
 </div>
 <!-- End of google calendar -->
-
-
-    <section id="dynamicSection">
-      <aside id="leftSidebar">
-	  
-	</aside>
-      <main id="main">News and Events</main>
-	  
-      <aside id="rightSidebar"></aside>
-      <footer id="mainFooter">
- 		 <footer id="subFooter1">Content for  id "subFooter1" Goes Here</footer>
-         <footer id="subFooter2">Content for  id "subFooter2" Goes Here</footer>
-      </footer>
-    </section>
-  </div>
+</div>
+<footer id="mainFooter"></footer>
 </div>
 </body>
 </html>
