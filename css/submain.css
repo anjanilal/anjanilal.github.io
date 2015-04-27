@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+#wapper{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	border: thick #000DFC 5px;
+	display: block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	position: relative;
+}
+
+#wapper > div {
+	float: left;
+	position:relative;
+}
+
+#heading {
+	width: 100%;
+	height: 5%;
+	background-color:#ebd3d0;
+	border: thin red;
+	position: relative;
+	display: block;
+	text-align:center;
+	font-weight: 700;
+	font-size: 150%;
+	line-height: 150%;
+	color: #5b273c;
+}
+
+#leftimgpart{
+	width: 100%;
+	height: 100%;
+	background-color: #d0e8eb;
+	border: thin black;
+	position: relative;
+	display: block;
+}
+
+.textWrapRight {
+	float:right;
+	margin: 10px;
+}
+
+.textWrapLeft {
+	float:left;
+	margin: 10px;	
+}
+
+.articleText {
+	font-weight: 600;
+	font-size: 150%;
+	line-height: 150%;
+	text-align: left;
+	color: #342D6E;
+}

@@ -62,11 +62,11 @@ a:hover, a:active , a:focus{
 }
 #mainnavigation ul li{
 	float: left;
-	padding-right: 1px;
+	padding-right: 0px;
 	position: relative;
 	z-index: 9999;
 	display: block;
-	padding-top: 1px;
+	padding-top: 0px;
 }
 #mainnavigation a {
 	width: 200px;
@@ -74,7 +74,7 @@ a:hover, a:active , a:focus{
 	display:table-cell;
 	vertical-align: middle; 
 	text-align: center;
-	background-color: #4D4D4D;
+	background-color: #2E2E2E;
 	color: #FFFFFF;
 }
 #mainnavigation a:hover   , #mainnavigation a:active, #mainnavigation a:focus, #mainnavigation a.thispage{
@@ -85,12 +85,16 @@ a:hover, a:active , a:focus{
 	padding-top: 6px;
 	padding-bottom: 6px;
 }
-
+#mainnavigation li {
+	border: 5px solid;
+	/*border-color: #4B46C8;*/
+}
 #mainnavigation li > ul {
 	display: none;
 	position: absolute;
 	left: 0;
 	top: 100%;
+	/*border: 5px solid blue;*/
 }
 #mainnavigation li:hover > ul {
 	display: block;
@@ -116,8 +120,8 @@ a:hover, a:active , a:focus{
 #slideshow   {
 	float: left;
 	overflow: auto;
-	margin-left: 350px;
-	margin-right: 350px;
+	margin-left: 40px;
+	margin-right: 5px;
 	display: block;
 }
 #previous   {
@@ -152,12 +156,16 @@ a:hover, a:active , a:focus{
 }
 #mainnavigation  {
 	/*margin-left: 45px;*/
-	margin:0 auto;
+	/*margin:0 auto;*/
 	/*border: 5px solid blue;*/
 	/*position: absolute;*/
-	bottom: 0;
-	width: auto;
-	/*height: 70px; */
+	/*bottom: 0;*/
+	/*width: auto;*/
+	/*height: 80px;*/
+	/*margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: -53px;
+	background-color: #4D4D4D;*/
 }
 
 #mainheader {
@@ -189,15 +197,16 @@ a:hover, a:active , a:focus{
 	opacity: 0.9;
 }
 #slideshow > img {
-	min-width: 700px;
-	min-height: 500px;
-	width: 1400px;
-	height: 970px;
+	/*min-width: 700px;*/
+	/*min-height: 500px;*/
+	width: 1000px;
+	height: 650px;
 	display: inline;
 	overflow: hidden;
 	position: relative;
-	max-width: 1000px;
-	max-height: 693px;
+	padding-top: 2px;
+	/*max-width: 1000px;*/
+	/*max-height: 693px;*/
 }
 #bottomwapper #dynamicSection #leftSidebar {
 	float: left;
@@ -210,7 +219,7 @@ a:hover, a:active , a:focus{
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 900;
-	font-size: 400%;
+	font-size: 380%;
 	text-align: center;
 	display: block;
 }
@@ -219,7 +228,7 @@ a:hover, a:active , a:focus{
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 800;
-	font-size: 200%;
+	font-size: 100%;
 	text-align: center;
 	display: block;
 	margin-bottom: 22px;
@@ -245,4 +254,36 @@ a:hover, a:active , a:focus{
 	padding-top: 0px;
 	margin-bottom: -40px;
 	line-height: 2%;
+}
+#leftSidebar {
+	width: 700px;
+	height: 768px;
+	display: block;
+}
+#gcalender {
+	background-color: none;
+	/*border-style: solid;*/
+	float: left;
+	width: 830px;
+	height: 700px;
+	position: absolute;
+	display: block;
+	margin-left:1040px;
+	margin-top:20px;
+}
+#bottomwapper {
+
+}
+#articles {
+	display: block;
+	float: left;
+	text-align: center;
+}
+h3 {
+	font-weight: 900;
+	font-size: 400%;
+	text-align: center;
+	text-decoration: underline;
+	text-indent: 0px;
+	display:block;
 }
