@@ -59,12 +59,13 @@ a:hover, a:active , a:focus{
 }
 #mainnavigation ul {
 	list-style-type: none;
+	z-index: 999;
 }
 #mainnavigation ul li{
 	float: left;
 	padding-right: 0px;
 	position: relative;
-	z-index: 9999;
+	/*z-index: 999;*/
 	display: block;
 	padding-top: 0px;
 }
@@ -102,7 +103,7 @@ a:hover, a:active , a:focus{
 #mainnavigation li > ul li > ul {
 	left: 100%;
 	top: 0;
-	
+	z-index: 9999;
 }
 #mainnavigation li > ul li > ul li{
 	width: 200px;
@@ -112,6 +113,7 @@ a:hover, a:active , a:focus{
 	position: relative;
 	left: -20%;
 	width: 200px;
+	z-index: 9999;
 	/*padding-top: 0px;*/
 }
 #mainnavigation li:hover > a {
@@ -219,7 +221,7 @@ a:hover, a:active , a:focus{
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 900;
-	font-size: 380%;
+	font-size: 4vw;
 	text-align: center;
 	display: block;
 }
@@ -228,7 +230,7 @@ a:hover, a:active , a:focus{
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 800;
-	font-size: 100%;
+	font-size: 2vw;
 	text-align: center;
 	display: block;
 	margin-bottom: 22px;
@@ -238,7 +240,7 @@ a:hover, a:active , a:focus{
 	font-style: italic;
 	font-variant: normal;
 	font-weight: 100;
-	font-size: 100%;
+	font-size: 1vw;
 	text-align: center;
 	display: block;
 	margin-bottom: 5px;
