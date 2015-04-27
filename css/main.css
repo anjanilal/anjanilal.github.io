@@ -23,30 +23,7 @@ html>body {
 	position: relative;
 	float:left;
 }
-/* Start of fixed menu */
-/*
-html>body #topwapper {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0px;
-  padding: 0;
-  height: auto;
-  border: 5px solid red;}
-  
-html>body .bottomwapper {
-  position: fixed;
-  top: auto;
-  right:0px;
-  left:0px;
-  bottom:1px;
-  padding:0;
-  border: 5px solid green;
-  overflow:auto;
-  max-height: 70%;
-}
-*/
-/* End of fixed menu */
+
 a {
 	font-weight: bold;
 }
@@ -132,7 +109,7 @@ a:hover, a:active , a:focus{
 	float: left;
 	overflow: auto;
 	margin-left: 40px;
-	margin-right: 5px;
+	margin-right: 1px;
 	display: block;
 	position: relative;
 	max-width: 900px;
@@ -157,29 +134,9 @@ a:hover, a:active , a:focus{
 	position: relative;
 	margin-top: 10px;
 }
-/*#slider img {
-	min-width: 700px;
-	min-height: 500px;
-	width: 700px;
-	height: 500px;
-	display: inline;
-	overflow: hidden;
-	position: relative;
-	max-width: 700px;
-	max-height: 500px;
-}*/
+
 #mainnavigation  {
-	/*margin-left: 45px;*/
-	/*margin:0 auto;*/
-	/*border: 5px solid blue;*/
-	/*position: absolute;*/
-	/*bottom: 0;*/
-	/*width: auto;*/
-	/*height: 80px;*/
-	/*margin-left: -10px;
-	margin-right: -10px;
-	margin-bottom: -53px;
-	background-color: #4D4D4D;*/
+
 }
 
 #wapper #topwapper #mainheader {
@@ -202,7 +159,9 @@ a:hover, a:active , a:focus{
 	top: 0; 
 	height: 0px; 
 	z-index: 9999;
-}#bottomwapper #slideshow .cycle-overlay {
+}
+
+#slideshow .cycle-overlay {
 	position: relative;
 	bottom: 0px;
 	width: 100%;
@@ -224,12 +183,7 @@ a:hover, a:active , a:focus{
 	max-width: 900px;
 	max-height: 550px;
 }
-#bottomwapper #dynamicSection #leftSidebar {
-	float: left;
-}
-#bottomwapper #dynamicSection #main {
-	float: left;
-}
+
 #mainheader #subheader2 h1 {
 	color: #FFF;
 	font-style: italic;
@@ -271,12 +225,8 @@ a:hover, a:active , a:focus{
 	margin-bottom: -40px;
 	line-height: 2%;
 }
-#leftSidebar {
-	width: 700px;
-	height: 768px;
-	display: block;
-}
-#wapper #bottomwapper #gcalender {
+
+#gcalender {
 	float: left;
 	width: auto;
 	height: auto;
@@ -284,10 +234,9 @@ a:hover, a:active , a:focus{
 	display: block;
 	max-width: 900px;
 	max-height: 650px;
+	margin-left: 40px;
 }
-#bottomwapper {
 
-}
 #articles {
 	display: block;
 	float: left;
@@ -302,10 +251,7 @@ h3 {
 	display:block;
 }
 
-.winWidth {
-	border: solid 5px red;
-}
-#wapper #bottomwapper #gcal {
+#gcal {
 	position: relative;
 }
 #wapper {

@@ -7,27 +7,7 @@
 <script type="text/javascript" src="plugin/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="plugin/jquery.cycle2.min.js"></script>
 <script src="plugin/anjaniCal.js"></script>
-<!--<script type="text/javascript" src="plugin/jquery.cycle.all.js"></script>	-->
-<!--<script type="text/javascript" src="plugin/jquery.cycle2.caption2.min.js"></script>-->
-<script>
-$(document).ready(function(){
-var innerw = $(window).innerWidth();
-var innerh = $(window).innerHeight();
-$(".winWidth").css("width", iw - 15);
-//$(".winWidth").css("height", ih - 50);
-});
-</script>
 </head>
-<!--<script type="text/javascript">
-$('#slider').cycle({ 
-    fx:     'scrollHorz', 
-    speed:  'slow', 
-    <!--timeout: 0, -->
-<!--    next:   '#next', 
-    prev:   '#previous' 
-});
-</script>-->
-  <!-- start of fixed navigation bar script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" -->
 <script>
    $(document).ready(function(){
 	   $(window).bind('scroll', function() {
@@ -92,11 +72,7 @@ $('#slider').cycle({
 		    $("#otherbhawn").click(function(){
 		   	$("#bottomwapper").html('<object data="pages/otherbhawn.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
 			});					
-			// remaining links		   
-					   
-					   
-					   
-					   
+			// remaining links
 		 });
 </script>
 <!-- End of page navigation script -->
@@ -195,16 +171,7 @@ $('#slider').cycle({
   </div>
   <br>
   <!-- <div id="bottomwapper" class="bottomwapper">"bottomwapper" -->
-  <div id="bottomwapper">
-<!--  start of slideshow-->
-<!--	<div id="slideshow">
-  	<div id="previous" class="controller"><p><</p></div>
-    <div id="slider">
-    <img src="images/Ram_Mandir_HDR1.jpg" alt="test"/>
-    <img src="images/Shiv_Mandir_HDR1.jpg" alt=""/>
-    </div>
-    <div id="next" class="controller"><p>></p></div>
-  </div> -->
+<div id="bottomwapper">
 <div id = "slideshow" class="cycle-slideshow" 
     data-cycle-fx=scrollHorz
     data-cycle-timeout=5000
@@ -218,8 +185,6 @@ $('#slider').cycle({
     <img src="images/Ram_Mandir_HDR1.jpg" data-cycle-title="श्री राम मंदिर" data-cycle-desc="प्राणप्रतिष्ठा : सन २०१२">
     <img src="images/Shiv_Mandir_HDR1.jpg" data-cycle-title="श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर" data-cycle-desc="प्राणप्रतिष्ठा : सन २००३">
     <img src="images/Ram_Mandir_HDR2.jpg" data-cycle-title="श्री राम मंदिर" data-cycle-desc="भगवान श्री राम दरबा">    
-<!--<img src="<?= $imagePath ?>/images/p3.jpg" data-cycle-title="Angel Island" data-cycle-desc="San Franscisco Bay">
-    <img src="<?= $imagePath ?>/images/p4.jpg" data-cycle-title="Raquette Lake" data-cycle-desc="Adirondack State Park">-->
 </div>
 <!--  End of Slideshow-->
 <!-- Start of google calendar -->
@@ -227,12 +192,10 @@ $('#slider').cycle({
 	var googleCalendarId="anjanilalbiaora@gmail.com";
 	var googleCalendarApiKey="AIzaSyDXu-zhIGHYpPAqo6D8TB7vXKEMOFGIEUo";
 	//optional--------------------------
-	//var eventWidgetWidth = 830; 
 	var pathToLoadingImage = "./loader.gif";
 </script>
 <div id="gcalender">
 <div id="gcal">
-<!--<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;hl=hi&amp;bgcolor=%23ffff99&amp;src=anjanilalbiaora%40gmail.com&amp;color=%231B887A&amp;src=en.indian%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=Asia%2FCalcutta" style=" border:solid 1px #777 " width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
 </div>
 </div>
 <!-- End of google calendar -->
