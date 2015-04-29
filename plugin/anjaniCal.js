@@ -7,8 +7,8 @@ var rowEventCounter = 0;
 var maxEventsInRow = Math.floor(eventWidgetWidth / 122);
 var $eventaxRow;
 var maxGcalEvents = 5;
-var dayNames = ['रवि', 'सोम', 'मंगल', 'बुध', 'गुरू', 'शुक्र', 'शनि'];
-var monthNames = ["जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितम्बर", "अक्टूबर", "नवम्बर", "दिसम्बर"];
+var dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Friday', 'Sat'];
+var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var lastDateProcessed = new Date();
 lastDateProcessed.setYear((lastDateProcessed.getYear() - 1));
 
