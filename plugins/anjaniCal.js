@@ -1,13 +1,13 @@
 // JavaScript Document
-if (null == eventWidgetWidth || eventWidgetWidth == "" || eventWidgetWidth == "undefined") var eventWidgetWidth = 640;
+if (null == eventWidgetWidth || eventWidgetWidth == "" || eventWidgetWidth == "undefined") var eventWidgetWidth = 600;
 if (null == pathToLoadingImage || pathToLoadingImage == "" || pathToLoadingImage == "undefined") var pathToLoadingImage = '';
 var dateLowerlimit = "";
 var nextPageToken;
 var rowEventCounter = 0;
-var maxEventsInRow = Math.floor(eventWidgetWidth / 122);
+var maxEventsInRow = Math.floor(eventWidgetWidth / 120);
 var $eventaxRow;
 var maxGcalEvents = 5;
-var dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Friday', 'Sat'];
+var dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var lastDateProcessed = new Date();
 lastDateProcessed.setYear((lastDateProcessed.getYear() - 1));
@@ -35,17 +35,17 @@ function getFormattedDate(dateTime, needFullDate) {
     else return "<span class='gcal-datetime'>" + hours + ":" + (dd.getMinutes() < 10 ? '0' : '') + dd.getMinutes() + " " + timeSuffix + "</span>"
 }
 $(document).ready(function() {
-    style = '<style>#gcal-table{margin:0px;} .gcal-tzone{color:rgb(202,211,236);font-size:12px;} .gcal-datetime {font-weight:bold;font-size: 20px;}.event-desc {word-wrap: break-word;font-size:11px;text-decoration:none;}#gcalender #gcal {font-size: 25px;text-align:left;display:block;position:absolute;overflow:hidden;width: auto;height: auto;border: none; position:relative}a:link,a:visited,a:hover,a:active {text-decoration:none;}.gcal-rpointer {position: absolute;right: -15px;top: 90px;font-size: 30px;font-weight: bold;color: rgb(213,63,53);width: 35px;height: 35px;padding-bottom: 7px;padding-left: 5px;cursor:pointer;cursor:mouse;border-radius: 35px;}.gcal-lpointer {position: absolute;left: -15px;top: 90px;font-size: 30px;font-weight: bold;color: rgb(213,63,53);width: 35px;height: 35px;padding-bottom: 7px;padding-left: 5px;cursor:pointer;cursor:mouse;border-radius: 35px;}</style>';
+    style = '<style>#gcal-table{margin:0px; display: block; position: relative;} .gcal-tzone{color:rgb(202,211,236);font-size:12px;} .gcal-datetime {font-weight:bold;font-size: 1em;} .event-desc {word-wrap: break-word;font-size: 1em;text-decoration:none;} #gcalender #gcal {display:block; position: relative; overflow:hidden; width: 100%; height: 100%; position: relative;} a:link,a:visited,a:hover,a:active {text-decoration:none;} .gcal-rpointer {position: absolute; right: -15px; top: 90px; font-size: 1em; font-weight: bold; color: rgb(213,63,53); width: 35px; height: 35px; padding-bottom: 7px; padding-left: 5px; cursor:pointer; cursor:mouse;border-radius: 35px;}.gcal-lpointer {position: absolute; left: -15px; top: 90px; font-size: 1vw; font-weight: bold; color: rgb(213,63,53); width: 35px; height: 35px; padding-bottom: 7px;padding-left: 5px; cursor:pointer; cursor:mouse; border-radius: 35px;}</style>';
     $('html > head').append(style);
-    var moreStyle = '<style>.event-header {text-align: center;width: 100%;height: 100%;max-width: 250px;max-height: 96px;background-color: rgb(46,46,46);color: white;padding: -0px;padding-bottom: 0px;border: none;position: absolute}.event-header-holder {position: relative;width: 100%;top: 20px;}.event-day {font-size: 24px;padding-bottom: 0px;display: inline-block;}.event-date {font-size: 30px;font-family: Georgia;}.event-year {font-size: 24px;padding-top: 10px;display: inline-block;}.event-body {cursor:pointer;cursor:mouse;width: 400px;height: 90px;border: none;padding: 3px;background-color: rgb(46,46,46);color: white;overflow: hidden;text-decoration: none;position: static;display:inline-block;margin-left:251px;}.event-title {color: rgb(255,216,177);font-weight: bold;}.event-location {color:rgb(255,0,128);font-size: 13px;}#load-more {background-color: rgb(46,46,46);visibility:none;border: none;display: block;padding: 3px;text-align: center;color: white;font: 13px arial,sans-serif;font-weight: bold;float: left;width: 650px;height: 90px;margin-left: -3px 2%;cursor: pointer;cursor: mouse;line-height: 100px;}.load-more:hover{background-color:red;}.gcal-datetime-extended {font-weight: bold;font-size: 13px;color: rgb(181,230,29);}.event-img {cursor:pointer;cursor:mouse;width: 110px;height: 110px;border: none;padding: 3px;color: black;overflow: hidden;background-repeat: no-repeat;background-size: cover;}</style>';
+    var moreStyle = '<style>.event-header {text-align: center; width: 30%; height: 20%; max-height: 19.2%; background-color: rgb(46,46,46); background-image: url(images/gcalBG.jpg); background-repeat: no-repeat; color: white; border: none; position: absolute; display: inline-block;} .event-header-holder { } .event-day {font-size: 1.2em; display: inline-block;} .event-date {font-size: 1.5em; font-family: Georgia;}.event-year {font-size: 1.2em; padding-top: 0px; display: inline-block;}.event-body {cursor:pointer; cursor:mouse; width: 70%; height: 100%; border: none; padding: 3px; background-color: rgb(46,46,46); background-image: url(images/gcalBG.jpg); background-repeat: no-repeat; color: white; overflow: hidden; text-decoration: none; position: static; display:inline-block; margin-left: 30%;}.event-title {color: rgb(177, 216, 255);font-weight: bold; font-size: 1.5em;}.event-location {color:white; font-size: 0.9vw;} #load-more {background-color: rgb(46,46,46);visibility:none;border: none;display: none;padding: 3px;text-align: center;color: white;font: 13px arial,sans-serif;font-weight: bold;float: left; width: 70%; height: 100%; margin-left: 2%; cursor: pointer; cursor: mouse; line-height: 100%;} .load-more:hover{background-color:red;} .gcal-datetime-extended {font-weight: bold;font-size: 13px;color: rgb(181,230,29);}.event-img {cursor:pointer;cursor:mouse;width: 110px;height: 110px;border: none;padding: 3px;color: black;overflow: hidden;background-repeat: no-repeat;background-size: cover;}</style>';
     $('html > head').append(moreStyle);
     var lightBoxStyle = '<style>#pimax-lightbox {position:fixed;background-color:rgba(0,0,0,0.9);z-index:100;width:100%;height:100%;left:0;top:0;}#picasa-img-lightbox {opacity:1; max-width:1000px; max-height:700px; z-index:200;cursor:pointer;cursor:mouse;}#picasa-lightbox-wrapper {text-align:center;height: 100%;width: 100%;white-space: nowrap;}#picasa-lightbox-image {text-align:center;display: inline-block;vertical-align: middle;white-space: normal;z-index:120;}#picasa-lightbox-helper {display: inline-block;vertical-align: middle;height: 100%;}#pimax-header a {text-decoration: none;color: inherit;}</style>';
     $('html > head').append(lightBoxStyle);
-    var lightBoxImageStyle = '<style>.lightbox-event {width:500px;height:auto;border: 1px solid #cccccc;padding: 3px;color: black;overflow: hidden;text-decoration: none;background-color: white;}.event-label {font-weight:normal;color:grey;font-size: 12px;}.event-hidden-link {display:none;}.lightbox-link {font-size: 12px;color: burlywood;}.lightbox-event-desc {word-wrap: break-word;font-size: 13px;text-decoration: none;}</style>';
+    var lightBoxImageStyle = '<style>.lightbox-event {width:500px;height:auto;border: 1px solid #cccccc;padding: 3px;color: white; overflow: hidden;text-decoration: none;background-color: #25004e;}.event-label {font-weight:normal;color:grey;font-size: 12px;}.event-hidden-link {display:none;}.lightbox-link {font-size: 12px;color: burlywood;}.lightbox-event-desc {word-wrap: break-word;font-size: 13px;text-decoration: none;}</style>';
     $('html > head').append(lightBoxImageStyle);
     $('#gcal').empty().append('<table id="gcal-table"></table>');
-    $('#gcal-table').append('<tr></tr>');
-    $eventaxRow = $('#gcal-table tr:last');
+    $('#gcal-table').append('<div></div>');
+    $eventaxRow = $('#gcal-table div:last');
     $('#gcal').append('<div id="pimax-lightbox"><div id="picasa-lightbox-wrapper"><div id="picasa-lightbox-image"></div><div id="picasa-lightbox-helper"></div></div></div>');
     $('#pimax-lightbox').click(function() {
         $('#picasa-img-lightbox').attr('src', '');
@@ -176,10 +176,10 @@ function showEvents(data) {
             if (lastDateProcessed.getYear() != eventStartDate.getYear() || lastDateProcessed.getDate() != eventStartDate.getDate() || lastDateProcessed.getMonth() != eventStartDate.getMonth()) {
                 dateHTML = showDateBox(eventStartDate);
                 $eventaxRow.append(dateHTML);
-                /*rowEventCounter++;*/ // Made change 12:01 25-04 
+                //rowEventCounter++; // Made change 12:01 25-04 
                 if (rowEventCounter >= maxEventsInRow) {
-                    $('#gcal-table').append('<tr></tr>');
-                    $eventaxRow = $('#gcal-table tr:last');
+                    $('#gcal-table').append('<div></div>');
+                    $eventaxRow = $('#gcal-table div:last');
                     rowEventCounter = 0
                 }
                 lastDateProcessed = eventStartDate
@@ -212,8 +212,8 @@ function showEvents(data) {
                 $eventaxRow.append(imgHTML);
                 rowEventCounter++;
                 if (rowEventCounter >= maxEventsInRow) {
-                    $('#gcal-table').append('<tr></tr>');
-                    $eventaxRow = $('#gcal-table tr:last');
+                    $('#gcal-table').append('<div></div>');
+                    $eventaxRow = $('#gcal-table div:last');
                     rowEventCounter = 0
                 }
             }
@@ -232,8 +232,8 @@ function showEvents(data) {
         }
         rowEventCounter++;
         if (rowEventCounter >= maxEventsInRow) {
-            $('#gcal-table').append('<tr></tr>');
-            $eventaxRow = $('#gcal-table tr:last');
+            $('#gcal-table').append('<div></div>');
+            $eventaxRow = $('#gcal-table div:last');
             rowEventCounter = 0
         }
     }
@@ -253,7 +253,7 @@ function showEvents(data) {
 
 function showDateBox(eventStartDate) {
     var eventYear = eventStartDate.getFullYear().toString().substr(2);
-    var dateHTML = '<div><div class="event-header"><div class="event-header-holder"><span class="event-day">' + dayNames[eventStartDate.getDay()] + '&nbsp;' +' </span><span class="event-date">' + eventStartDate.getDate() + '&nbsp;' + '</span><span class="event-year">' + monthNames[eventStartDate.getMonth()] + '&nbsp;' + eventYear + '</span></div></div></div>';
+    var dateHTML = '<div><div class="event-header"><div class="event-header-holder"><br><br><span class="event-day">' + dayNames[eventStartDate.getDay()] + '&nbsp;' +' </span><span class="event-date">' + eventStartDate.getDate() + '&nbsp;' + '</span><span class="event-year">' + monthNames[eventStartDate.getMonth()] + '&nbsp;' + eventYear + '</span><br><br><br><br></div></div></div>';
     return dateHTML
 }
 

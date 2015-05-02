@@ -2,14 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anjani Lal Mandir Trust</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="plugin/jquery-2.1.3.min.js"></script>
-<script type="text/javascript" src="plugin/jquery.cycle2.min.js"></script>
-<script src="plugin/anjaniCal.js"></script>
+<link rel="stylesheet" href="css/magnific-popup.css">
+<script type="text/javascript" src="plugins/jquery-2.1.3.min.js"></script>
+<script src="plugins/anjaniCal.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="plugins/responsiveslides.min.js"></script>
+<script src="plugins/anjaniPopUp.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
@@ -20,12 +26,12 @@
 <script>
    $(document).ready(function(){
 	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 550;
+	   var navHeight = $( window ).height() - 650;
 			 if ($(window).scrollTop() > navHeight) {
-				 $('nav').addClass('fixed');
+				 $('#mainnavigation').addClass('fixed');
 			 }
 			 else {
-				 $('nav').removeClass('fixed');
+				 $('#mainnavigation').removeClass('fixed');
 			 }
 		});
 	});
@@ -35,7 +41,7 @@
 <script type="text/javascript">
 		$(document).ready(function(){
 		   $("#anjanimandir").click(function(){
-		    $("#bottomwapper").html('<object data="pages/anjanimandir1.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">'); 
+		    $("#bottomwapper").html('<object data="pages/anjanimandir1.html" width="100%" height="1000px">'); 
 			}); 
 		   $("#shivmandir").click(function(){
 		   	$("#bottomwapper").html('<object data="pages/shivmandir.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
@@ -80,122 +86,144 @@
 			});			
 		    $("#otherbhawn").click(function(){
 		   	$("#bottomwapper").html('<object data="pages/otherbhawn.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
-			});					
+			});
+			$("#etihas").click(function(){
+		   	$("#bottomwapper").html('<object data="pages/Itihas.html" width="100%" height="1000px" style=border:5px ridge blue">');
+			});
+			$("#sampark").click(function(){
+		   	$("#bottomwapper").html('<object data="pages/sampark.html" style="overflow:hidden; float:left;width:100%; height:1000px; position: relative">');
+			});						
 			// remaining links
-		 });
+			
+		});
 </script>
 <!-- End of page navigation script -->
+<script>	
+	$(function(){
+		$(".rslides").responsiveSlides({
+			auto: true,             // Boolean: Animate automatically, true or false
+			speed: 500,            // Integer: Speed of the transition, in milliseconds
+			timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+			pager: false,           // Boolean: Show pager, true or false
+			nav: false,             // Boolean: Show navigation, true or false
+			random: false,          // Boolean: Randomize the order of the slides, true or false
+			pause: false,           // Boolean: Pause on hover, true or false
+			pauseControls: false    // Boolean: Pause when hovering controls, true or false
+			//prevText: "Previous",   // String: Text for the "previous" button
+			//nextText: "Next",       // String: Text for the "next" button
+			//maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+			//navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+			//manualControls: "",     // Selector: Declare custom pager navigation
+			//namespace: "rslides",   // String: Change the default namespace used
+			//before: function(){},   // Function: Before callback
+			//after: function(){}     // Function: After callback
+		});
+	});
+</script>
 <body>
 <div id="wapper">
   <div id="topwapper">
-    <header id="mainheader">
-      <header id="subheader1"><h6><b>AA जय श्री राम AA जय श्री अंजनीलाल AA ॐ नमो शिवाय AA</b></h6></header>
+    <a href="index.html"><header id="mainheader">
+      <header id="subheader1"><h6><b>AA Jh jke AA t; Jh vatuhyky AA ॐ ue% f'kok; AA</b></h6></header>
       <header id="subheader2">
-        <h1>श्री अंजनीलाल मंदिर ट्रस्ट ब्यावरा राजगढ ¼मÛप्रÛ½</h1>
-        <h5>मÛप्रÛ शासन द्वारा पंजीकृत ट्रस्ट ¼धर्मिक, सामाजिक, राष्ट्रीय एवं मानव हितार्थ कार्यो में अग्रणी संस्था½</h5>
+        <h1>Jh vatuhyky eafnj VªLV C;kojk jktx<+ e/; çns'k</h1>
+        <h5>e-ç- 'kklu }kjk iath—r VªLV ¼ /kfeZd] lkekftd] jk"Vªh; ,oa ekuo fgrkFkZ dk;ksZ esa vxz.kh laLFkk ½</h5>
       </header>
-    </header>
+    </header></a>
     <!--  Start of Navigation-->
     <nav id="mainnavigation">
     <ul>
-    <li><a id="home" href="index.html" class="thispage">आगमन</a></li>
-    <li><a id="mandir">मंदिर</a>
+    <li><a id="home" href="index.html" class="thispage">vkxeu</a></li>
+    <li><a id="mandir">eafnj</a>
     	<ul>
-            <li><a id="anjanimandir" href="#">श्री अंजनीलाल मंदिर</a></li>
-            <li><a id="rammandir" href="#">श्री राम मंदिर</a></li>
-            <li><a id="shivmandir" href="#">श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर</a></li>
+            <li><a id="anjanimandir" href="#">Jh vatuhyky eafnj</a></li>
+            <li><a id="rammandir" href="#">Jh jke eafnj</a></li>
+            <li><a id="shivmandir" href="#">Jh Onkn'kT;ksfrfyZxs'oj egknso eafnj</a></li>
         </ul>
     </li>
-    <li><a id="buildings" href="#">अन्य भवन</a>
+    <li><a id="buildings" href="#">vU; Hkou</a>
     	<ul>
-        	<li><a id="office" href="#">कार्यालय</a></li>
-            <li><a id="santniwas" href="#">संत निवास</a></li>
-            <li><a id="vishram" href="#">विश्राम गृह</a></li>
-            <li><a id="satsang" href="#">सत्संग भवन</a></li>
-            <li><a id="samudayik" href="#">सामुदायिक भवन</a></li>
-            <li><a id="arogy" href="#">आरोग्य भवन</a></li>
-            <li><a id="sitarasoi" href="#">सीता रसोई</a></li>
-            <li><a id="goshala" href="#">गौ शाला</a></li>
-            <li><a id="balkida" href="#">बाल क्रीडागन</a></li>
-            <li><a id="ashokvadika" href="#">अशोक वाटिका</a></li>
-            <li><a id="ramdhat" href="#">राम धाट</a></li>
-            <li><a id="otherbhawn" href="#">अन्य</a></li>
+        	<li><a id="office" href="#">dk;kZy;</a></li>
+            <li><a id="santniwas" href="#">lar fuokl</a></li>
+            <li><a id="vishram" href="#">foJke x`g</a></li>
+            <li><a id="satsang" href="#">lRlax Hkou</a></li>
+            <li><a id="samudayik" href="#">lkeqnkf;d Hkou</a></li>
+            <li><a id="arogy" href="#">vkjksX; Hkou</a></li>
+            <li><a id="sitarasoi" href="#">lhrk jlksbZ</a></li>
+            <li><a id="goshala" href="#">xkS 'kkyk</a></li>
+            <li><a id="balkida" href="#">cky ØhMkxu</a></li>
+            <li><a id="ashokvadika" href="#">v'kksd okfVdk</a></li>
+            <li><a id="ramdhat" href="#">jke /kkV</a></li>
+            <li><a id="otherbhawn" href="#">vU;</a></li>
         </ul>
      </li>
-     <li><a id="gatividhi" href="#">गतिविधियाँ</a>
+     <li><a id="gatividhi" href="#">xfrfof/k;k</a>
     	<ul>
-            <li><a id="dharmik" href="#">धार्मिक</a>
+            <li><a id="dharmik" href="#">/kkfeZd</a>
             	<ul>
-                	<li><a id="avishek" herf="#">अभिषेक</a></li>
-                    <li><a id="ramjanam" herf="#">श्री राम जन्मोत्सव</a></li>
-                    <li><a id="hanumanjenti" herf="#">हनुमान जयंती</a></li>
-                    <li><a id="shivratri" herf="#">महा शिवरात्रि</a></li>
-                    <li><a id="navratri" herf="#">नवरात्रि महोत्सव</a></li>
-                    <li><a id="kavaryatra" herf="#">कवाड यात्रा</a></li>
-                    <li><a id="shavnsom" herf="#">श्रावण सोमवार</a></li>
-                    <li><a id="shardpurnima" herf="#">शरद पूर्णिमा</a></li>
-                    <li><a id="vmala" herf="#">व्याख्यान माला</a></li>
+                	<li><a id="avishek" herf="#">vfHk"ksd</a></li>
+                    <li><a id="ramjanam" herf="#">Jh jke tUeksRlo</a></li>
+                    <li><a id="hanumanjenti" herf="#">guqeku t;arh</a></li>
+                    <li><a id="shivratri" herf="#">egk f'kojkf=</a></li>
+                    <li><a id="navratri" herf="#">uojkf= egksRlo</a></li>
+                    <li><a id="kavaryatra" herf="#">dokM ;k=k</a></li>
+                    <li><a id="shavnsom" herf="#">Jko.k lkseokj</a></li>
+                    <li><a id="shardpurnima" herf="#">'kjn iwf.kZek</a></li>
+                    <li><a id="vmala" herf="#">O;k[;ku ekyk</a></li>
             	</ul>
             </li>
-            <li><a id="samajik" href="#">सामजिक</a>
+            <li><a id="samajik" href="#">lkeftd</a>
             	<ul>
-                	<li><a id="samuhikvi" herf="#">सामुहिक विवाह</a></li>
-                    <li><a id="netrshivir" herf="#">नेत्र शिविर</a></li>
-                    <li><a id="rogshivir" herf="#">रोग निदान शिविर</a></li>
+                	<li><a id="samuhikvi" herf="#">lkeqfgd fookg</a></li>
+                    <li><a id="netrshivir" herf="#">us= f'kfoj</a></li>
+                    <li><a id="rogshivir" herf="#">jksx funku f'kfoj</a></li>
                 </ul>
             </li>
-            <li><a id="rastriy" href="#">राष्ट्रीय</a>
+            <li><a id="rastriy" href="#">jk"Vªh;</a>
             	<ul>
-             		<li><a id="sevadal" herf="#">सेवा दल</a></li>
-                    <li><a id="rastriyvip" herf="#">राष्ट्रीय विपदा में सहायता</a></li>
+             		<li><a id="sevadal" herf="#">lsok ny</a></li>
+                    <li><a id="rastriyvip" herf="#">jk"Vªh; foink esa lgk;rk</a></li>
                 </ul>
             </li>
-            <li><a id="sheksnik" href="#">शेक्षणिक</a>
+            <li><a id="sheksnik" href="#">'ks{kf.kd</a>
             	<ul>
-            		<li><a id="chatrsam" herf="#">छात्र सम्मान</a></li>
-                    <li><a id="ramyangyan" herf="#">रामायण ज्ञान परीक्षा</a></li>
-                    <li><a id="tivrbhasn" herf="#">त्वरित भाषण प्रतियोगिता</a></li>
-                    <li><a id="vadvivad" herf="#">वाद विवाद प्रतियोगिता</a></li>
-                    <li><a id="antaksari" herf="#">अन्ताक्षरी</a></li>
-                    <li><a id="chitrkala" herf="#">चित्रकला प्रतियोगिता</a></li>
-                    <li><a id="bhajangayan" herf="#">भजन गायन प्रतियोगिता</a></li>
+            		<li><a id="chatrsam" herf="#">Nk= lEeku</a></li>
+                    <li><a id="ramyangyan" herf="#">jkek;.k Kku ijh{kk</a></li>
+                    <li><a id="tivrbhasn" herf="#">Rofjr Hkk"k.k çfr;ksfxrk</a></li>
+                    <li><a id="vadvivad" herf="#">okn fookn çfr;ksfxrk</a></li>
+                    <li><a id="antaksari" herf="#">vUrk{kjh</a></li>
+                    <li><a id="chitrkala" herf="#">fp=dyk çfr;ksfxrk</a></li>
+                    <li><a id="bhajangayan" herf="#">Hktu xk;u çfr;ksfxrk</a></li>
                 </ul>
             </li>
         </ul>
     	</li>
-        <li><a id="gatividhi" href="#">इतिहास</a>
+        <li><a id="etihas" href="#">bfrgkl</a>
         
         </li>
-        <li><a id="gatividhi" href="#">दान राशि</a>
+        <li><a id="gatividhi" href="#">nku jkf'k</a>
         
         </li>
-        <li><a id="gatividhi" href="#">संपर्क सूत्र</a>
+        <li><a id="sampark" href="#">laidZ lw=</a>
         
         </li>
         </ul>
     </li>
     </ul>
     </nav>
-    <!--  End of Navigation-->
   </div>
-  <br>
-  <!-- <div id="bottomwapper" class="bottomwapper">"bottomwapper" -->
+  <!--  End of Navigation and header -->
 <div id="bottomwapper">
-<div id = "slideshow" class="cycle-slideshow" 
-    data-cycle-fx=scrollHorz
-    data-cycle-timeout=5000
-    data-cycle-caption-plugin=caption2
-    data-cycle-easing="linear"
-    data-cycle-overlay-fx-out="slideUp"
-    data-cycle-overlay-fx-in="slideDown"
-    >
-    <div class="cycle-overlay"></div>
-
-    <img src="images/Ram_Mandir_HDR1.jpg" data-cycle-title="श्री राम मंदिर" data-cycle-desc="प्राणप्रतिष्ठा : सन २०१२">
-    <img src="images/Shiv_Mandir_HDR1.jpg" data-cycle-title="श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर" data-cycle-desc="प्राणप्रतिष्ठा : सन २००३">
-    <img src="images/Ram_Mandir_HDR2.jpg" data-cycle-title="श्री राम मंदिर" data-cycle-desc="भगवान श्री राम दरबा">    
+<!-- new responsive slideshow -->
+<div id="captioned-gallery">
+<ul class="rslides">
+  <li><img src="images/Ram_Mandir_HDR1.jpg"/><p class="caption">Hkxoku Jh jke efUnj</p></li>
+  <li><img src="images/Naya_Mandir_HDR1.jpg"/><p class="caption">fuekZ.kk/khu Hkxoku Jh vatuhyky eafnj</p></li>
+  <li><img src="images/Shiv_Mandir_HDR1.jpg"/><p class="caption">Hkxoku Onkn'kT;ksfrfyZxs'oj egknso efUnj</p></li>
+  <li><img src="images/Naya_Mandir_HDR3.jpg"/><p class="caption">fuekZ.kk/khu Hkxoku Jh vatuhyky eafnj</p></li>
+</ul>
 </div>
-<!--  End of Slideshow-->
+<!--End of slideshow -->
 <!-- Start of google calendar -->
 <script type="text/javascript">
 	var googleCalendarId="anjanilalbiaora@gmail.com";
@@ -209,7 +237,45 @@
 </div>
 <!-- End of google calendar -->
 </div>
-<footer id="mainFooter"></footer>
+<footer id="mainFooter">
+  <h5>irk & Jh vatuhyky eafnj /kke C;kojk] ftyk & jktx&lt] e/; çns'k] fiu dksM 465674
+Qksu uacj 07374&232465</h5>
+</footer>
 </div>
+<script>
+$(document).ready(function() {
+
+$('.without-caption').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+
+$('.with-caption').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		},
+		zoom: {
+			enabled: true
+		}
+	});
+
+});
+</script>
 </body>
 </html>
