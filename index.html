@@ -41,57 +41,60 @@
 <script type="text/javascript">
 		$(document).ready(function(){
 		   $("#anjanimandir").click(function(){
-		    $("#bottomwapper").html('<object data="pages/anjanimandir1.html" width="100%" height="1000px">'); 
+		    $("#bottomwapper").load('pages/anjanimandir1.html'); 
 			}); 
 		   $("#shivmandir").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/shivmandir.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/shivmandir.html');
 		     //alert("Thanks for visiting!");
 		   }); 
 		   $("#rammandir").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/rammandir.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/rammandir.html');
 		     //alert("Thanks for visiting!");
 		   });
 		    $("#office").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/office.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/office.html');
 			});
 			$("#santniwas").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/santniwas.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/santniwas.html');
 			});
 		    $("#vishram").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/vishram.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/vishram.html');
 			});		   
 		    $("#satsang").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/satsang.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/satsang.html');
 			});		   
 		    $("#samudayik").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/samudayik.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/samudayik.html');
 			});		   
 		    $("#arogy").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/arogy.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/arogy.html');
 			});		   
 		    $("#sitarasoi").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/sitarasoi.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/sitarasoi.html');
 			});
 		    $("#goshala").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/goshala.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/goshala.html');
 			});			
 		    $("#balkida").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/balkida.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/balkida.html');
 			});			
 		    $("#ashokvadika").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/ashokvadika.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/ashokvadika.html');
 			});			
 		    $("#ramdhat").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/ramdhat.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/ramdhat.html');
 			});			
 		    $("#otherbhawn").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/otherbhawn.html" width="100%" height="1000px" style=overflow:auto;border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/otherbhawn.html');
 			});
 			$("#etihas").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/Itihas.html" width="100%" height="1000px" style=border:5px ridge blue">');
+		   	$("#bottomwapper").load('pages/Itihas.html');
 			});
 			$("#sampark").click(function(){
-		   	$("#bottomwapper").html('<object data="pages/sampark.html" style="overflow:hidden; float:left;width:100%; height:1000px; position: relative">');
+		   	$("#bottomwapper").load('pages/sampark.html');
+			});		
+			$("#danrashi").click(function(){
+		   	$("#bottomwapper").load('pages/danrashi.html');
 			});						
 			// remaining links
 			
@@ -123,13 +126,15 @@
 <body>
 <div id="wapper">
   <div id="topwapper">
-    <a href="index.html"><header id="mainheader">
+  <header id="mainheader">
       <header id="subheader1"><h6><b>AA Jh jke AA t; Jh vatuhyky AA ॐ ue% f'kok; AA</b></h6></header>
+      <a href="index.html">
       <header id="subheader2">
         <h1>Jh vatuhyky eafnj VªLV C;kojk jktx<+ e/; çns'k</h1>
         <h5>e-ç- 'kklu }kjk iath—r VªLV ¼ /kfeZd] lkekftd] jk"Vªh; ,oa ekuo fgrkFkZ dk;ksZ esa vxz.kh laLFkk ½</h5>
       </header>
-    </header></a>
+      </a>
+    </header>
     <!--  Start of Navigation-->
     <nav id="mainnavigation">
     <ul>
@@ -201,7 +206,7 @@
         <li><a id="etihas" href="#">bfrgkl</a>
         
         </li>
-        <li><a id="gatividhi" href="#">nku jkf'k</a>
+        <li><a id="danrashi" href="#">nku jkf'k</a>
         
         </li>
         <li><a id="sampark" href="#">laidZ lw=</a>
