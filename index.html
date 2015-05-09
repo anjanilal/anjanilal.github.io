@@ -6,12 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anjani Lal Mandir Trust</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="colorbox.css">
 <script type="text/javascript" src="plugins/jquery-2.1.3.min.js"></script>
 <script src="plugins/anjaniCal.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="plugins/responsiveslides.min.js"></script>
-<script src="plugins/anjaniPopUp.js"></script>
+<script src="jquery.colorbox-min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,6 +51,9 @@
 		   	$("#bottomwapper").load('pages/rammandir.html');
 		     //alert("Thanks for visiting!");
 		   });
+		   	$("#buildings").click(function(){
+		   	$("#bottomwapper").load('pages/uplabdhiya.html');
+			});
 		    $("#office").click(function(){
 		   	$("#bottomwapper").load('pages/office.html');
 			});
@@ -146,8 +149,8 @@
             <li><a id="shivmandir" href="#">Jh Onkn'kT;ksfrfyZxs'oj egknso eafnj</a></li>
         </ul>
     </li>
-    <li><a id="buildings" href="#">vU; Hkou</a>
-    	<ul>
+    <li><a id="buildings" href="#">miyfC/k;k</a>
+<!--    	<ul>
         	<li><a id="office" href="#">dk;kZy;</a></li>
             <li><a id="santniwas" href="#">lar fuokl</a></li>
             <li><a id="vishram" href="#">foJke x`g</a></li>
@@ -160,7 +163,7 @@
             <li><a id="ashokvadika" href="#">v'kksd okfVdk</a></li>
             <li><a id="ramdhat" href="#">jke /kkV</a></li>
             <li><a id="otherbhawn" href="#">vU;</a></li>
-        </ul>
+        </ul> -->
      </li>
      <li><a id="gatividhi" href="#">xfrfof/k;k</a>
     	<ul>
@@ -210,7 +213,6 @@
         
         </li>
         <li><a id="sampark" href="#">laidZ lw=</a>
-        
         </li>
         </ul>
     </li>
@@ -247,40 +249,5 @@
 Qksu uacj 07374&232465</h5>
 </footer>
 </div>
-<script>
-$(document).ready(function() {
-
-$('.without-caption').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		closeBtnInside: false,
-		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-		image: {
-			verticalFit: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300 // don't foget to change the duration also in CSS
-		}
-	});
-
-$('.with-caption').magnificPopup({
-		type: 'image',
-		closeOnContentClick: true,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) {
-				return item.el.attr('title');
-			}
-		},
-		zoom: {
-			enabled: true
-		}
-	});
-
-});
-</script>
 </body>
 </html>
