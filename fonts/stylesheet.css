@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'kruti_dev_640normal';
-    src: url('kruti_dev_640-webfont.eot');
+    /*src: url('kruti_dev_640-webfont.eot');*/
     src: url('kruti_dev_640-webfont.eot?#iefix') format('embedded-opentype'),
          url('kruti_dev_640-webfont.woff2') format('woff2'),
          url('kruti_dev_640-webfont.woff') format('woff'),
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'kruti_dev_700normal';
-    src: url('kruti_dev_700_normal-webfont.eot');
+    /*src: url('kruti_dev_700_normal-webfont.eot');*/
     src: url('kruti_dev_700_normal-webfont.eot?#iefix') format('embedded-opentype'),
          url('kruti_dev_700_normal-webfont.woff2') format('woff2'),
          url('kruti_dev_700_normal-webfont.woff') format('woff'),
@@ -37,7 +37,7 @@
 
 @font-face {
     font-family: 'kruti_dev_100regular';
-    src: url('krutidev_100-webfont.eot');
+    /*src: url('krutidev_100-webfont.eot');*/
     src: url('krutidev_100-webfont.eot?#iefix') format('embedded-opentype'),
          url('krutidev_100-webfont.woff2') format('woff2'),
          url('krutidev_100-webfont.woff') format('woff'),
@@ -50,7 +50,7 @@
 
 @font-face {
     font-family: 'open_sansregular';
-    src: url('opensans-regular-webfont.eot');
+    /*src: url('opensans-regular-webfont.eot');*/
     src: url('opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('opensans-regular-webfont.woff2') format('woff2'),
          url('opensans-regular-webfont.woff') format('woff'),
