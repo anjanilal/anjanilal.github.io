@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url("../webfonts/Kruti_Dev_640/stylesheet.css");
-@import url("../webfonts/Krutidev_100/stylesheet.css");
+@import url("../fonts/stylesheet.css");
+/* changed on 13th May 2015 */
 
 
 
@@ -9,6 +9,14 @@ html {
 	background-size: 80px auto;
 	background-color: #D9DDF1;
 }
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+
 /*
 # wapper #topwapper {
 	list-style-type: none;
@@ -25,11 +33,9 @@ a {
 	font-weight: bold;
 }
 a:link {
-	color: #FF6600;
 	text-decoration: none;
 }
 a:visited {
-	color: #FF944C;
 	text-decoration: none;
 }
 a:hover, a:active , a:focus{
@@ -76,12 +82,12 @@ a:hover, a:active , a:focus{
 	background-color: #2E2E2E;
 	font-weight: 500;
 	font-size: 2vw;
-	font-family: "Kruti Dev 640";
+	font-family: "kruti_dev_640normal";
 	background-repeat: no-repeat;
 	background-image: url(../images/buttonBG.jpg);
 }
 #wapper #topwapper #mainnavigation {
-	font-family: "Kruti Dev 640";
+	font-family: "kruti_dev_640normal";
 }
 #wapper #mainFooter {
 	display: block;
@@ -91,8 +97,9 @@ a:hover, a:active , a:focus{
 	float: left;
 	width: 100%;
 	background-repeat: repeat-x;
-	font-family: "Krutidev 100";
-	font-style: italic;
+	font-family: "kruti_dev_700normal";
+	text-decoration: none;
+	/*font-style: italic;*/
 	text-align: center;
 	color: #FFFFFF;
 	font-weight: 500;
@@ -196,7 +203,7 @@ font-size: 3vw;
 
 #wapper #topwapper #mainheader {
 	text-align: center;
-	font-family: "Devlys 010";
+	font-family: "kruti_dev_700normal";
 	line-height: 40%;
 	/*background-color: #86123E;*/
 	padding-top: 1px;
@@ -257,7 +264,7 @@ font-size: 3vw;
 	color: #FFF;
 	font-style: italic;
 	font-variant: normal;
-	font-weight: 800;
+	font-weight: 500;
 	font-size: 1vw;
 	text-align: center;
 	display: block;
@@ -274,7 +281,7 @@ font-size: 3vw;
 	display: block;
 	margin-bottom: -13px;
 	margin-top: 6px;
-	font-family: "Kruti Dev 640";
+	font-family: "kruti_dev_640normal";
 }
 #topwapper #mainheader #subheader1 {
 	padding-bottom: 0px;
@@ -285,7 +292,8 @@ font-size: 3vw;
 	padding-bottom: 0px;
 	padding-top: 0px;
 	margin-bottom: -54px;
-	font-family: "Krutidev 100";
+	font-family: "kruti_dev_100regular";
+	text-decoration: none;
 	font-weight: 700;
 	font-size: x-large;
 	line-height: -23%;
@@ -388,7 +396,8 @@ body, figure {
 	font-size: 2.5vw;
 	padding: .6rem;
 	margin-bottom: 0px;
-	font-family: "Krutidev 100";
+	font-family: "kruti_dev_700normal";
+	text-decoration: none;
 	font-weight: 500;
   }
 /* End of responsive slideshow */
@@ -445,7 +454,8 @@ font-size: 2vw;
 }
 
 #leftimgpart > h1 {
-	font-family: "Krutidev 100";
+	font-family: "kruti_dev_700normal";
+	text-decoration: none;
 	margin-left: 1%;
 	margin-right: 1%;
 	overflow: hidden;
@@ -476,13 +486,14 @@ font-size: 2vw;
 	font-size: 1.7vw;
 	text-align: left;
 	color: #2B0316;
-	font-family: "Krutidev 100";
-	font-weight: normal;
+	font-family: "kruti_dev_010regular";
+	text-decoration: none;
+	font-weight: 500;
 	line-height: 110%;
 	letter-spacing: 105%;
 	margin-left: 2%;
 	margin-right: 2%;
-	font-variant: normal;
+	/*font-variant: normal; */
 	overflow: hidden;
 }
 
@@ -493,4 +504,17 @@ pre {
  white-space: -o-pre-wrap;    /* Opera 7 */
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
  overflow:hidden;
+}
+
+.english {
+	font-size: 1.2vw;
+	text-align: left;
+	color: #2B0316;
+	font-family: "open_sansregular";
+	text-decoration: none;
+	font-weight: 500;
+	line-height: 110%;
+	letter-spacing: 105%;
+	/*font-variant: normal; */
+	overflow: hidden;
 }

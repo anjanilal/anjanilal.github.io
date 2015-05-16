@@ -91,3 +91,8 @@ pre {
  word-wrap: break-word;       /* Internet Explorer 5.5+ */
  overflow: hidden;
 }
+
+li {
+    line-height: 0.5rem;
+	margin: 0;
+}
