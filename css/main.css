@@ -62,15 +62,12 @@ a:hover, a:active , a:focus{
 	list-style: none;
 	float: left;
 	text-align: center;
-	/*border-left: 1px solid #fff;*/
-    /*border-right: 1px solid #ccc;*/
 	width: 14.2857%; /* fallback for non-calc() browsers */
 	box-sizing: border-box;
-	/*padding-right: 0px;*/
 	position: relative;
 	z-index: 999;
 	display: block;
-	/*padding-top: 0px;*/
+	height: 100%;
 }
 #mainnavigation a {
 	display: block;
