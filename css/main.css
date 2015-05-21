@@ -552,7 +552,7 @@ pre {
 	position: relative;
 	float: left;
 	display: block;
-	width: 78%;
+	width: 68%;
 	height: 100%;
 	text-align: right;
 }
@@ -561,7 +561,7 @@ pre {
 	position: relative;
 	float: left;
 	display: block;
-	width: 18%;
+	width: 28%;
 	height: 100%;
 	margin-right: 2%;
 }
@@ -570,7 +570,7 @@ pre {
 	text-decoration: none;
 	color: white;
 	text-align: center;
-	font-size: 4vw;
+	font-size: 3vw;
 	font-family: "kruti_dev_700normal";
 }
 
