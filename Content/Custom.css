@@ -1,4 +1,8 @@
-﻿@media (max-width: 991px) {
+/*Root*/
+
+
+
+@media (max-width: 991px) {
     .navbar-header {
         float: none;
     }
@@ -38,44 +42,19 @@
 
 /*Start Responsive text setting*/
 
-@media screen and (max-width: 544px) {
-    h2{font-size: 3.4vw;}
-    h3{font-size: 2.8vw}
-    h4{font-size: 2.5vw}
-    h5{font-size: 2.5vw}
-    h6{font-size: 1.7vw}
+@media screen and (max-width: 400px) {
+    html{font-size: 30px;}
 }
 
-@media screen and (min-width: 544px) {
-    h2{font-size: 3.4vw;}
-    h3{font-size: 2.8vw}
-    h4{font-size: 2.5vw}
-    h5{font-size: 2vw}
-    h6{font-size: 1.7vw}
+@media screen and (min-width: 400px) {
+    html{font-size: 30px;}
 }
 
-@media screen and (min-width: 768px) {
-    h2{font-size: 3.5vw;}
-    h3{font-size: 3vw}
-    h4{font-size: 2.5vw}
-    h5{font-size: 2vw}
-    h6{font-size: 1.5vw}
-}
-
-@media screen and (min-width: 992px) {
-    h2{font-size: 3vw;}
-    h3{font-size: 2.5vw}
-    h4{font-size: 2vw}
-    h5{font-size: 1.5vw}
-    h6{font-size: 1vw}
-}
+@media screen and (min-width: 700px) {
+    html{font-size: 20px;}
 
 @media screen and (min-width: 1200px) {
-    h2{font-size: 3vw;}
-    h3{font-size: 2.5vw}
-    h4{font-size: 2vw}
-    h5{font-size: 1vw}
-    h6{font-size: 1vw}
+    html {font-size: 10px;}
 }
 
 
@@ -86,8 +65,16 @@
 body {
     max-width: 100%;
     overflow-x: hidden;
+    padding-top: 66px;
+    /*background: url(../images/repeatarticleBGBlueLig.jpg);*/
+    background-color: rgba(73, 84, 91, 1);
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
+@media screen and (max-width: 991px) {
+    body { padding-top: 55px; }
+}
 p{
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
@@ -111,7 +98,10 @@ section {
 .navbar {
     /*background-image: url(../img/headerBanner2.jpg);*/
     /*background-color: rgba(243, 134, 48, 1);*/
-    background-color: #880c34;
+    background: rgba(73, 84, 91, 0.84);
+    /*49545B*/
+    border: none;
+    box-shadow: none;
 }
 
 .navMenuItem {
@@ -164,7 +154,11 @@ section {
 
 .jumbotron {
     /*background-color: rgba(167, 219, 219, 1);*/
-    background-color: #617ea4;
+    /*background-color: #5B5449;*/
+    /*background-color: #588C73;*/
+    background-color: rgba(88, 140, 115, 0.5);
+    max-height: 200px;
+    padding: 0;
 }
 
 /*jumbotron Editing*/
@@ -182,17 +176,39 @@ overflow: hidden;
 }
 
 .manCarousel, .new-caption-area {
-    /*width: 700px;*/
-    margin: auto;
     color: white;
-    background: black;
+    background: rgba(73, 84, 91, 1);
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
     font-size: 2vw;
   }
 
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 /*carousel Editing*/
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/Parallax_01.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /*Model Editing*/
 .modal-body .form-horizontal .col-sm-2,
@@ -208,3 +224,5 @@ overflow: hidden;
 }
 
 /*Model Editing*/
+
+.mb-4{margin-bottom:1.5rem!important}
