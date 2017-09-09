@@ -7,6 +7,8 @@
     <title>Anjani Lal Mandir Trust</title>
 </head>
 <body>
+<script src="../Scripts/jquery-1.9.1.js"></script>
+<script src="../Scripts/bootstrap.js"></script>
 <div id="wapper">
     <!-- Navbar Start -->
     <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top">
@@ -20,7 +22,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" style="font-family: 'Noto Sans', sans-serif"><h4>श्री अंजनी लाल मंदिर ट्रस्ट</h4></a>
+                        <a class="navbar-brand" href="/index.html" style="font-family: 'Noto Sans', sans-serif"><h4>श्री अंजनी लाल मंदिर ट्रस्ट</h4></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -44,7 +46,7 @@
                             </li>
                             <li><a href="#" class="navMenuItem"><h5>इतिहास</h5></a></li>
                             <li><a href="#" class="navMenuItem"><h5>सदस्य गड़</h5></a></li>
-                            <li><a href="#" class="navMenuItem"><h5>संपर्क सूत्र</h5></a></li>
+                            <li><a href="/pages/contact.html" class="navMenuItem"><h5>संपर्क सूत्र</h5></a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -55,7 +57,7 @@
 
         <!-- Page Content -->
     <div class="container">
-        <h1>संपर्क विवरण:</h1>
+        <h1 style="color: white">संपर्क विवरण</h1>
               <!-- Content Row -->
       <div class="row">
         <!-- Map Column -->
@@ -65,24 +67,27 @@
         </div>
         <!-- Contact Details Column -->
         <div class="col-lg-4 mb-4">
-          <h3>संपर्क विवरण</h3>
-            <p>
+            <h3 style="color: white">संपर्क विवरण :</h3>
+           
+            <h5 style="color: white">
                 श्री अंजनीलाल मंदिर धाम
                 <br>ब्यावरा, जिला - राजगढ, मध्य प्रदेश
-                <br>पिन कोड 465674
-                <br>
-            </p>
-          <p>
-            <abbr title="Phone">फोन नंबर</abbr>: 07374-232465
-          </p>
-          <p>
-            <abbr title="Email">ईमेल</abbr>:
-            <a href="mailto:anjanilalbiaora@gmail.com">anjanilalbiaora@gmail.com
-            </a>
-          </p>
-          <p>
-            <abbr title="Hours">दर्शन का समय</abbr>: सुबह 5 बजे मंदिर खुलने के बाद रात्रि 11 बजे तक दर्शन के लिए खुला रहता है |
-          </p>
+                <br>पिन कोड : 465674
+                <br/>
+                <br/>
+            </h5>
+          <h5 style="color: white">
+              फोन नंबर : 07374-232465
+              
+          </h5>
+            <h5 style="color: white">
+                <br/>
+                ईमेल : <a href="mailto:anjanilalbiaora@gmail.com"><i style="font-size: 1.5rem">anjanilalbiaora@gmail.com</i></a>
+            </h5>
+            <h5 style="color: white">
+                <br/>
+                दर्शन का समय : सुबह 5 बजे मंदिर खुलने के बाद रात्रि 11 बजे तक दर्शन के लिए खुला रहता है |
+            </h5>
         </div>
       </div>
       <!-- /.row -->
@@ -91,36 +96,36 @@
       <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
       <div class="row">
         <div class="col-lg-8 mb-4">
-          <h3>अधिक जानकारी और दान हेतु संदेश भेजें:</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
+          <h3 style="color: white">अधिक जानकारी और दान हेतु संदेश भेजें:</h3>
+          <form name="sentMessage" id="gform" method="POST" action="" novalidate>
             <div class="control-group form-group">
               <div class="controls">
                 <label>शुभ नाम:</label>
-                <input type="text" class="form-control" id="name" required data-validation-required-message="कृपया आपका पूरा नाम प्रविष्ट कीजिए">
+                <input name="name" type="text" class="form-control" id="name" required data-validation-required-message="कृपया आपका पूरा नाम प्रविष्ट कीजिए">
                 <p class="help-block"></p>
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label>फ़ोन या मोबाइल नंबर:</label>
-                <input type="tel" class="form-control" id="phone" required data-validation-required-message="कृपया अपना फोन या मोबाइल नंबर दर्ज करें">
+                <input name="phone" type="tel" class="form-control" id="phone" required data-validation-required-message="कृपया अपना फोन या मोबाइल नंबर दर्ज करें">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label>ईमेल एड्रेस:</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="कृपया अपना ईमेल एड्रेस दर्ज करें">
+                <input name="email" type="email" class="form-control" id="email" required data-validation-required-message="कृपया अपना ईमेल एड्रेस दर्ज करें">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label>आपका संदेश:</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="आपका संदेश" maxlength="999" style="resize:none"></textarea>
+                <textarea name="message" rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="आपका संदेश" maxlength="999" style="resize:none"></textarea>
               </div>
             </div>
             <div id="success"></div>
             <!-- For success/fail messages -->
-            <button type="submit" class="btn btn-primary">मेसेज भेजें</button>
+              <button type="submit" class="btn btn-primary" style="font-family: 'Noto Sans', sans-serif; font-size: 1.5rem">मेसेज भेजें</button>
           </form>
         </div>
       </div>
@@ -130,14 +135,12 @@
 
     <!-- Footer -->
     <!-- JavaScript -->
-    <script src="../Scripts/jquery.min.js"></script>
-    <script src="../Scripts/popper.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
 
     <!-- Contact form JavaScript -->
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="../Scripts/jqBootstrapValidation.js"></script>
     <script src="../Scripts/contact_me.js"></script>
+	<script src="../Scripts/jqBootstrapValidation.js"></script>
 </div>
 
 <!-- Footer -->

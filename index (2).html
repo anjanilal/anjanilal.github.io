@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link href="Content/bootstrap.css" rel="stylesheet"/>
@@ -22,7 +22,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" style="font-family: 'Noto Sans', sans-serif"><h4>श्री अंजनी लाल मंदिर ट्रस्ट</h4></a>
+                        <a class="navbar-brand" href="/index.html" style="font-family: 'Noto Sans', sans-serif">श्री अंजनी लाल मंदिर ट्रस्ट</a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -46,7 +46,7 @@
                             </li>
                             <li><a href="#" class="navMenuItem"><h5>इतिहास</h5></a></li>
                             <li><a href="#" class="navMenuItem"><h5>सदस्य गड़</h5></a></li>
-                            <li><a href="#" class="navMenuItem"><h5>संपर्क सूत्र</h5></a></li>
+                            <li><a href="/pages/contact.html" class="navMenuItem"><h5>संपर्क सूत्र</h5></a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -71,7 +71,7 @@
                 });
             });
         </script>
-        <div class="container bg-danger">
+        <div class="container-fluid bg-danger">
             <div class="row">
                 <div class="col-xs-12 manCarousel bg-info">
                     <div id="heroCarousel" class="carousel slide" data-ride="carousel">
@@ -82,9 +82,9 @@
                             <li data-target="#heroCarousel" data-slide-to="2" class=""></li>
                             <li data-target="#heroCarousel" data-slide-to="3" class=""></li>
                         </ol>
-                        <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner carouselItem" role="listbox">
                             <div class="item active">
-                                <img class="first-slide img-responsive" src="images/Slide_01_Ram_Mandir.jpg" alt="Ram Mandir">
+                                <img class="slide" class="img-responsive" src="images/Slide_01_Ram_Mandir.jpg" alt="Ram Mandir">
                                 <div class="container">
                                     <div class="carousel-caption">
                                         <h2>भगवान श्री राम मन्दिर</h2>
@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="second-slide" src="images/Slide_02_Naya_Mandir.jpg" alt="Anjani Lal Mandir">
+                                <img class="slide" src="images/Slide_02_Naya_Mandir.jpg" alt="Anjani Lal Mandir">
                                 <div class="container">
                                     <div class="carousel-caption">
                                         <h2>निर्माणाधीन भगवान श्री अंजनीलाल मंदिर</h2>
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="third-slide" src="images/Slide_04_Shiv_Mandir.jpg" alt="Shiv Mandir">
+                                <img class="slide" src="images/Slide_04_Shiv_Mandir.jpg" alt="Shiv Mandir">
                                 <div class="container">
                                     <div class="carousel-caption text-center">
                                         <h2>भगवान व्दादशज्योतिर्लिगेश्वर महादेव मन्दिर</h2>
@@ -150,10 +150,10 @@
         <!-- Daan -->
         <div class="row" style="padding-top: 20px; padding-bottom: 10px">
             <div class="col-md-8 text-center">
-                <h3>श्री अंजनीलाल मंदिर के निर्माणा कार्य में सहयोग करने हेतु</h3>
+                <h3 class="whiteText">श्री अंजनीलाल मंदिर के निर्माणा कार्य में सहयोग करने हेतु</h3>
             </div>
             <div class="col-md-4">
-                <button class="btn btn-lg btn-block" href="">संपर्क करे</button>
+                <a class="btn btn-lg buttonLink btn-block" href="pages/contact.html"><h4>संपर्क करे</h4></a>
             </div>
         </div>
         <hr>
@@ -162,7 +162,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 <div class="card-body">
-                    <h2 class="card-title">
+                    <h2 class="whiteText">
                         ४३ वां नवरात्री महोत्सव
                     </h2>
                     <p class="card-text">श्री अंजनीलाल मंदिर धाम ब्यावरा पर हर वर्ष की तरह इस वर्ष भी ४३ वां नवरात्री महोत्सव बड़ी ही घूम-धाम से मनाया जायेगा । अपने इष्ट मित्रों एवं परिवार जनों सहित पधारकर इस महोत्सव को सफल करे ।</p>
@@ -176,7 +176,9 @@
         </div>
     </div>
 </div>
+    
 <!-- Confimed EOF -->
+
 <div class="page-header bottom">
     <div class="row">
         <div class="col-xs-12 text-center" style="background-color: black; color: #808080">
