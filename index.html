@@ -1,261 +1,194 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anjani Lal Mandir Trust</title>
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="colorbox.css">
-<script type="text/javascript" src="plugins/jquery-2.1.3.min.js"></script>
-<!--<script src="plugins/anjaniCal.js"></script>-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="plugins/responsiveslides.min.js"></script>
-<script src="plugins/anjaniLightbox.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-62316744-1', 'auto');
-  ga('send', 'pageview');
-</script>
+    <link href="Content/bootstrap.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <link href="Content/Custom.css" rel="stylesheet" />
+    <title>Anjani Lal Mandir Dhaam</title>
 </head>
-<script>
-   $(document).ready(function(){
-	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 650;
-			 if ($(window).scrollTop() > navHeight) {
-				 $('#mainnavigation').addClass('fixed');
-			 }
-			 else {
-				 $('#mainnavigation').removeClass('fixed');
-			 }
-		});
-	});
-</script>
-<!-- End of fixed navigation bar script -->
-<!-- Start of page navigation script -->
-<script type="text/javascript">
-		$(document).ready(function(){
-		   $("#anjanimandir").click(function(){
-		    $("#bottomwapper").load('pages/anjanimandir1.html'); 
-			}); 
-		   $("#shivmandir").click(function(){
-		   	$("#bottomwapper").load('pages/shivmandir.html');
-		     //alert("Thanks for visiting!");
-		   }); 
-		   $("#rammandir").click(function(){
-		   	$("#bottomwapper").load('pages/rammandir.html');
-		     //alert("Thanks for visiting!");
-		   });
-		   	$("#buildings").click(function(){
-		   	$("#bottomwapper").load('pages/uplabdhiya.html');
-			});
-		    $("#office").click(function(){
-		   	$("#bottomwapper").load('pages/office.html');
-			});
-			$("#santniwas").click(function(){
-		   	$("#bottomwapper").load('pages/santniwas.html');
-			});
-		    $("#vishram").click(function(){
-		   	$("#bottomwapper").load('pages/vishram.html');
-			});		   
-		    $("#satsang").click(function(){
-		   	$("#bottomwapper").load('pages/satsang.html');
-			});		   
-		    $("#samudayik").click(function(){
-		   	$("#bottomwapper").load('pages/samudayik.html');
-			});		   
-		    $("#arogy").click(function(){
-		   	$("#bottomwapper").load('pages/arogy.html');
-			});		   
-		    $("#sitarasoi").click(function(){
-		   	$("#bottomwapper").load('pages/sitarasoi.html');
-			});
-		    $("#goshala").click(function(){
-		   	$("#bottomwapper").load('pages/goshala.html');
-			});			
-		    $("#balkida").click(function(){
-		   	$("#bottomwapper").load('pages/balkida.html');
-			});			
-		    $("#ashokvadika").click(function(){
-		   	$("#bottomwapper").load('pages/ashokvadika.html');
-			});			
-		    $("#ramdhat").click(function(){
-		   	$("#bottomwapper").load('pages/ramdhat.html');
-			});			
-		    $("#otherbhawn").click(function(){
-		   	$("#bottomwapper").load('pages/otherbhawn.html');
-			});
-			$("#etihas").click(function(){
-		   	$("#bottomwapper").load('pages/Itihas.html');
-			});
-			$("#sampark").click(function(){
-		   	$("#bottomwapper").load('pages/sampark.html');
-			});		
-			$("#sadasya").click(function(){
-		   	$("#bottomwapper").load('pages/trustygun.html');
-			});						
-			$("#dharmik").click(function(){
-		   	$("#bottomwapper").load('pages/dharmic.html');
-			});
-			$("#samajik").click(function(e){
-			e.preventDefault();
-		   	$("#bottomwapper").load('pages/samajik.html');
-			});				
-			// remaining links
-			
-		});
-</script>
-<!-- End of page navigation script -->
-<script>	
-	$(function(){
-		$(".rslides").responsiveSlides({
-			auto: true,             // Boolean: Animate automatically, true or false
-			speed: 500,            // Integer: Speed of the transition, in milliseconds
-			timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-			pager: false,           // Boolean: Show pager, true or false
-			nav: false,             // Boolean: Show navigation, true or false
-			random: false,          // Boolean: Randomize the order of the slides, true or false
-			pause: false,           // Boolean: Pause on hover, true or false
-			pauseControls: false    // Boolean: Pause when hovering controls, true or false
-			//prevText: "Previous",   // String: Text for the "previous" button
-			//nextText: "Next",       // String: Text for the "next" button
-			//maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-			//navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-			//manualControls: "",     // Selector: Declare custom pager navigation
-			//namespace: "rslides",   // String: Change the default namespace used
-			//before: function(){},   // Function: Before callback
-			//after: function(){}     // Function: After callback
-		});
-	});
-</script>
 <body>
+<script src="Scripts/jquery-1.9.1.js"></script>
+<script src="Scripts/bootstrap.js"></script>
 <div id="wapper">
-  <div id="topwapper">
-  <header id="mainheader">
-      <header id="subheader1"><h6><b>AA Jh jke AA t; Jh vatuhyky AA ॐ ue% f'kok; AA</b></h6></header>
-      <a href="index.html">
-      <header id="subheader2">
-        <h1>Jh vatuhyky eafnj VªLV C;kojk jktx<+ e/; çns'k</h1>
-        <h5>e-ç- 'kklu }kjk iath—r VªLV ¼ /kfeZd] lkekftd] jk"Vªh; ,oa ekuo fgrkFkZ dk;ksZ esa vxz.kh laLFkk ½</h5>
-      </header>
-      </a>
-    </header>
-    <!--  Start of Navigation-->
-    <nav id="mainnavigation">
-    <ul>
-    <li><a id="home" href="index.html" class="thispage">vkxeu</a></li>
-    <li><a id="mandir">eafnj</a>
-    	<ul>
-            <li><a id="anjanimandir" href="#">Jh vatuhyky eafnj</a></li>
-            <li><a id="rammandir" href="#">Jh jke eafnj</a></li>
-            <li><a id="shivmandir" href="#">Jh Onkn'kT;ksfrfyZxs'oj egknso eafnj</a></li>
-        </ul>
-    </li>
-    <li><a id="buildings" href="#">miyfC/k;k</a>
-<!--    	<ul>
-        	<li><a id="office" href="#">dk;kZy;</a></li>
-            <li><a id="santniwas" href="#">lar fuokl</a></li>
-            <li><a id="vishram" href="#">foJke x`g</a></li>
-            <li><a id="satsang" href="#">lRlax Hkou</a></li>
-            <li><a id="samudayik" href="#">lkeqnkf;d Hkou</a></li>
-            <li><a id="arogy" href="#">vkjksX; Hkou</a></li>
-            <li><a id="sitarasoi" href="#">lhrk jlksbZ</a></li>
-            <li><a id="goshala" href="#">xkS 'kkyk</a></li>
-            <li><a id="balkida" href="#">cky ØhMkxu</a></li>
-            <li><a id="ashokvadika" href="#">v'kksd okfVdk</a></li>
-            <li><a id="ramdhat" href="#">jke /kkV</a></li>
-            <li><a id="otherbhawn" href="#">vU;</a></li>
-        </ul> -->
-     </li>
-     <li><a id="gatividhi" href="#">xfrfof/k;k</a>
-    	<ul>
-            <li><a id="dharmik" href="#">/kkfeZd</a>
-            	<!--<ul>
-                	<li><a id="avishek" herf="#">vfHk"ksd</a></li>
-                    <li><a id="ramjanam" herf="#">Jh jke tUeksRlo</a></li>
-                    <li><a id="hanumanjenti" herf="#">guqeku t;arh</a></li>
-                    <li><a id="shivratri" herf="#">egk f'kojkf=</a></li>
-                    <li><a id="navratri" herf="#">uojkf= egksRlo</a></li>
-                    <li><a id="kavaryatra" herf="#">dokM ;k=k</a></li>
-                    <li><a id="shavnsom" herf="#">Jko.k lkseokj</a></li>
-                    <li><a id="shardpurnima" herf="#">'kjn iwf.kZek</a></li>
-                    <li><a id="vmala" herf="#">O;k[;ku ekyk</a></li>
-            	</ul>-->
-            </li>
-            <li><a id="samajik" href="#">lkeftd</a>
-            	<!--<ul>
-                	<li><a id="samuhikvi" herf="#">lkeqfgd fookg</a></li>
-                    <li><a id="netrshivir" herf="#">us= f'kfoj</a></li>
-                    <li><a id="rogshivir" herf="#">jksx funku f'kfoj</a></li>
-                </ul>-->
-            </li>
-            <li><a id="rastriy" href="#">jk"Vªh;</a>
-            	<!--<ul>
-             		<li><a id="sevadal" herf="#">lsok ny</a></li>
-                    <li><a id="rastriyvip" herf="#">jk"Vªh; foink esa lgk;rk</a></li>
-                </ul>-->
-            </li>
-            <li><a id="sheksnik" href="#">'ks{kf.kd</a>
-            	<!--<ul>
-            		<li><a id="chatrsam" herf="#">Nk= lEeku</a></li>
-                    <li><a id="ramyangyan" herf="#">jkek;.k Kku ijh{kk</a></li>
-                    <li><a id="tivrbhasn" herf="#">Rofjr Hkk"k.k çfr;ksfxrk</a></li>
-                    <li><a id="vadvivad" herf="#">okn fookn çfr;ksfxrk</a></li>
-                    <li><a id="antaksari" herf="#">vUrk{kjh</a></li>
-                    <li><a id="chitrkala" herf="#">fp=dyk çfr;ksfxrk</a></li>
-                    <li><a id="bhajangayan" herf="#">Hktu xk;u çfr;ksfxrk</a></li>
-                </ul>-->
-            </li>
-        </ul>
-    	</li>
-        <li><a id="etihas" href="#">bfrgkl</a>
-        
-        </li>
-        <li><a id="sadasya" href="#">lnL; xM+</a>
-        
-        </li>
-        <li><a id="sampark" href="#">laidZ lw=</a>
-        </li>
-        </ul>
-    </li>
-    </ul>
+    <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Navbar Start -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/index.html" style="font-family: 'Noto Sans', sans-serif">श्री अंजनी लाल मंदिर धाम</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle navMenuItem" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h5>मंदिर<span class="caret"></span></h5></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/pages/anjanimandir.html" class="navMenuItem"><h5>श्री अंजनीलाल मंदिर</h5></a></li>
+                                    <li><a href="/pages/rammandir.html" class="navMenuItem"><h5>श्री राम मंदिर</h5></a></li>
+                                    <li><a href="/pages/shivmandir.html" class="navMenuItem"><h5>श्री व्दादशज्योतिर्लिगेश्वर महादेव मंदिर</h5></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="navMenuItem"><h5>उपलब्धिया</h5></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle navMenuItem" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h5>गतिविधिया<span class="caret"></span></h5></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/pages/dharmik.html" class="navMenuItem"><h5>धार्मिक</h5></a></li>
+                                    <li><a href="/pages/samajik.html" class="navMenuItem"><h5>सामजिक</h5></a></li>
+                                    <li><a href="#" class="navMenuItem"><h5>राष्ट्रीय</h5></a></li>
+                                    <li><a href="#" class="navMenuItem"><h5>शेक्षणिक</h5></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/pages/etihas.html" class="navMenuItem"><h5>इतिहास</h5></a></li>
+                            <li><a href="/pages/sadasya.html" class="navMenuItem"><h5>सदस्य गड़</h5></a></li>
+                            <li><a href="/pages/contact.html" class="navMenuItem"><h5>संपर्क सूत्र</h5></a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
     </nav>
-  </div>
-  <!--  End of Navigation and header -->
-<div id="bottomwapper">
-<!-- new responsive slideshow -->
-<div id="captioned-gallery">
-<ul class="rslides">
-  <li><img src="images/Ram_Mandir_HDR1.jpg"/><p class="caption">Hkxoku Jh jke efUnj</p></li>
-  <li><img src="images/Naya_Mandir_HDR1.jpg"/><p class="caption">fuekZ.kk/khu Hkxoku Jh vatuhyky eafnj</p></li>
-  <li><img src="images/Shiv_Mandir_HDR1.jpg"/><p class="caption">Hkxoku Onkn'kT;ksfrfyZxs'oj egknso efUnj</p></li>
-  <li><img src="images/Naya_Mandir_HDR3.jpg"/><p class="caption">fuekZ.kk/khu Hkxoku Jh vatuhyky eafnj</p></li>
-</ul>
+    <!-- Navbar End -->
+
+    <header>
+        <!-- Carousel -->
+        <script>
+            jQuery(function($) {
+                $('.carousel').carousel();
+                var caption = $('div.item:nth-child(1) .carousel-caption');
+                $('.new-caption-area').html(caption.html());
+                caption.css('display', 'none');
+
+                $(".carousel").on('slide.bs.carousel', function(evt) {
+                    var caption = $('div.item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .carousel-caption');
+                    $('.new-caption-area').html(caption.html());
+                    caption.css('display', 'none');
+                });
+            });
+        </script>
+        <div class="container-fluid bg-danger">
+            <div class="row">
+                <div class="col-xs-12 manCarousel bg-info">
+                    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#heroCarousel" data-slide-to="1" class=""></li>
+                            <li data-target="#heroCarousel" data-slide-to="2" class=""></li>
+                            <li data-target="#heroCarousel" data-slide-to="3" class=""></li>
+                        </ol>
+                        <div class="carousel-inner carouselItem" role="listbox">
+                            <div class="item active">
+                                <img class="slide" class="img-responsive" src="images/Slide_01_Ram_Mandir.jpg" alt="Ram Mandir">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h2>भगवान श्री राम मन्दिर</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="slide" src="images/Slide_02_Naya_Mandir.jpg" alt="Anjani Lal Mandir">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h2>निर्माणाधीन भगवान श्री अंजनीलाल मंदिर</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="slide" src="images/Slide_04_Shiv_Mandir.jpg" alt="Shiv Mandir">
+                                <div class="container">
+                                    <div class="carousel-caption text-center">
+                                        <h2>भगवान व्दादशज्योतिर्लिगेश्वर महादेव मन्दिर</h2>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="slide" src="images/Slide_03_Naya_Mandir.jpg" alt="Anjani Lal Mandir">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h2>निर्माणाधीन भगवान श्री अंजनीलाल मंदिर</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#heroCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#heroCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="new-caption-area"></div>
+                    <!-- End Carousel -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="parallax" style="padding-top: 150px">
+        <!-- Jumbotron Start -->
+        <div class="row" style="position: relative">
+            <div class="col-xs-12">
+                <div class="jumbotron text-center" style="overflow: hidden">
+                    <h5 style="font-family: 'Noto Sans', sans-serif; color: white; padding-top: 10px">जय श्री राम ।। जय श्री अंजनीलाल ।। ॐ नमः शिवाय ।।</h5>
+                    <h1 style="font-family: 'Noto Sans', sans-serif; color: white">श्री अंजनीलाल मंदिर ट्रस्ट ब्यावरा, राजगढ़, मध्य प्रदेश</h1>
+                    <h4 style="font-family: 'Noto Sans', sans-serif; color: white; padding-bottom: 10px">म.प्र. शासन द्वारा पंजीकृत ट्रस्ट (धर्मिक, सामाजिक, राष्ट्रीय एवं मानव हितार्थ कार्यो में अग्रणी संस्था)</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Jumbotron End -->
+    </div>
+    <div class="container">
+        <!-- Daan -->
+        <div class="row" style="padding-top: 20px; padding-bottom: 10px">
+            <div class="col-md-8 text-center">
+                <h3 class="whiteText">श्री अंजनीलाल मंदिर के निर्माणा कार्य में सहयोग करने हेतु</h3>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-lg buttonLink btn-block" href="pages/contact.html"><h4>संपर्क करे</h4></a>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Cards start -->
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="card">
+                    <h4 class="card-header">४३ वां नवरात्री महोत्सव</h4>
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 1.5rem">श्री अंजनीलाल मंदिर धाम ब्यावरा पर हर वर्ष की तरह इस वर्ष भी ४३ वां नवरात्री महोत्सव बड़ी ही घूम-धाम से मनाया जायेगा । अपने इष्ट मित्रों एवं परिवार जनों सहित पधारकर इस महोत्सव को सफल करे ।</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <div class="card">
+                    <a href="#"><img class="card-img-top" src="#" alt="navratri 2017"></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<!--End of slideshow -->
-<!-- Start of google calendar 
-<script type="text/javascript">
-	var googleCalendarId="anjanilalbiaora@gmail.com";
-	var googleCalendarApiKey="AIzaSyDXu-zhIGHYpPAqo6D8TB7vXKEMOFGIEUo";
-	//optional--------------------------
-	var pathToLoadingImage = "./loader.gif";
-</script> -->
-<div id="gcalender">
-<div id="gcal">
-<img src="images/Navratri2016.jpg" height="100%" width="100%"/>
+    
+<!-- Confimed EOF -->
+
+<!-- Footer -->
+<div class="page-header bottom">
+    <div class="row">
+        <div class="col-xs-12 text-center" style="background-color: black; color: #808080">
+            <p>
+                <h4>पता - श्री अंजनीलाल मंदिर धाम ब्यावरा, जिला - राजगढ, मध्य प्रदेश, पिन कोड : 465674, फोन नंबर : 07374-232465, ईमेल : anjanilalbiaora@gmail.com</h4>
+            </p>
+        </div>
+    </div>
 </div>
-</div>
-<!-- End of google calendar -->
-</div>
-<footer id="mainFooter">
-  <h5>irk & Jh vatuhyky eafnj /kke C;kojk] ftyk & jktx&lt] e/; çns'k] fiu dksM 465674
-Qksu uacj 07374&232465</h5>
-</footer>
-</div>
+<!-- Footer -->
 </body>
 </html>
